@@ -85,7 +85,7 @@ ssh -CNg -L 8501:127.0.0.1:8501 root@connect.bjb1.seetacloud.com -p 14973
 
 8501 要换成 streamlit run 后出现的地址所给的，14973 换成你的服务器实例给的端口。运行后出现输入密码，粘贴服务器实例密码，注意这里不会显示密码，直接按回车。然后打开本地浏览器输入 127.0.0.1:8501 就可以打开在远程服务器跑的 streamlit 页面了。
 
-## 使用 Llama-factory 对模型进行 fine-tune
+# 微调：使用 Llama-factory 对模型进行 fine-tune
 
 原作者：@article{zheng2024llamafactory,
 title={LlamaFactory: Unified Efficient Fine-Tuning of 100+ Language Models},
@@ -95,13 +95,13 @@ year={2024},
 url={http://arxiv.org/abs/2403.13372}
 }
 
-# 安装需要的包
+## 安装需要的包
 
 ```shell
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 ```
 
-# 运行
+## 运行
 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python src/train_web.py
